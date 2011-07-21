@@ -4,10 +4,10 @@
 <dict>
 	<key>Ancestors</key>
 	<array>
-		<string>com.borealkiss.base</string>
+		<string>com.jessearmand.base</string>
 	</array>
 	<key>Identifier</key>
-	<string>com.borealkiss.bundleBase</string>
+	<string>com.jessearmand.bundleBase</string>
 	<key>Kind</key>
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Options</key>

@@ -4,11 +4,11 @@
 <dict>
 	<key>Ancestors</key>
 	<array>
-		<string>com.borealkiss.objectiveCApplication</string>
-		<string>com.borealkiss.iPhoneBase</string>
+		<string>com.jessearmand.objectiveCApplication</string>
+		<string>com.jessearmand.iPhoneBase</string>
 	</array>
 	<key>Identifier</key>
-	<string>com.borealkiss.cocoaTouchApplication</string>
+	<string>com.jessearmand.cocoaTouchApplication</string>
 	<key>Kind</key>
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Project</key>
