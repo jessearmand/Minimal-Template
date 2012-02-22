@@ -5,8 +5,8 @@
 //  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <SenTestingKit/SenTestingKit.h>
 
-@protocol ___FILEBASENAMEASIDENTIFIER___ <NSObject>
+@interface ___FILEBASENAMEASIDENTIFIER___ : SenTestCase
 
 @end

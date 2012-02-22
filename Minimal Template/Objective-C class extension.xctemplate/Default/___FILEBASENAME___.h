@@ -5,8 +5,8 @@
 //  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+___IMPORTHEADER_extensionClass___
 
-@protocol ___FILEBASENAMEASIDENTIFIER___ <NSObject>
+@interface ___VARIABLE_extensionClass:identifier___ ()
 
 @end

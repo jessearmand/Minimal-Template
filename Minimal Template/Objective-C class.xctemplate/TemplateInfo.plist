@@ -18,23 +18,103 @@
 	<key>Options</key>
 	<array>
 		<dict>
+			<key>Description</key>
+			<string>The name of the class to create</string>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Name</key>
+			<string>Class</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
 			<key>Default</key>
 			<string>NSObject</string>
 			<key>Description</key>
 			<string>What class to subclass in the new file</string>
+			<key>FallbackHeader</key>
+			<string>#import &lt;UIKit/UIKit.h&gt;</string>
 			<key>Identifier</key>
 			<string>cocoaTouchSubclass</string>
 			<key>Name</key>
 			<string>Subclass of</string>
 			<key>Required</key>
 			<string>YES</string>
+			<key>Suffixes</key>
+			<dict>
+				<key>UITableViewCell</key>
+				<string>Cell</string>
+				<key>UITableViewController</key>
+				<string>ViewController</string>
+				<key>UIViewController</key>
+				<string>ViewController</string>
+			</dict>
 			<key>Type</key>
-			<string>combo</string>
+			<string>class</string>
 			<key>Values</key>
 			<array>
 				<string>NSObject</string>
-				<string>UITableViewCell</string>
 				<string>UIView</string>
+				<string>UIViewController</string>
+				<string>UITableViewController</string>
+				<string>UITableViewCell</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>false</string>
+			<key>Identifier</key>
+			<string>iPad</string>
+			<key>Name</key>
+			<string>Targeted for iPad</string>
+			<key>RequiredOptions</key>
+			<dict>
+				<key>cocoaTouchSubclass</key>
+				<array>
+					<string>UIViewController</string>
+					<string>UITableViewController</string>
+				</array>
+			</dict>
+			<key>Type</key>
+			<string>checkbox</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>true</string>
+			<key>Identifier</key>
+			<string>withXIB</string>
+			<key>Name</key>
+			<string>With XIB for user interface</string>
+			<key>RequiredOptions</key>
+			<dict>
+				<key>cocoaTouchSubclass</key>
+				<array>
+					<string>UIViewController</string>
+					<string>UITableViewController</string>
+				</array>
+			</dict>
+			<key>Type</key>
+			<string>checkbox</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>usingARC</string>
+			<key>Name</key>
+			<string>CLANG_ENABLE_OBJC_ARC</string>
+			<key>RequiredOptions</key>
+			<dict>
+				<key>cocoaTouchSubclass</key>
+				<string>UITableViewController</string>
+			</dict>
+			<key>Type</key>
+			<string>buildSetting</string>
+			<key>Values</key>
+			<array>
+				<string>NO</string>
 			</array>
 		</dict>
 	</array>
@@ -45,6 +125,6 @@
 	<key>SortOrder</key>
 	<string>1</string>
 	<key>Summary</key>
-	<string>An Objective-C class with a header</string>
+	<string>An Objective-C class with a header for Cocoa Touch</string>
 </dict>
 </plist>

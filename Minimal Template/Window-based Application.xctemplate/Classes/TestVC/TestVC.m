@@ -1,6 +1,5 @@
 //
 //  TestVC.m
-//  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
 //  Copyright ___ORGANIZATIONNAME___ ___YEAR___. All rights reserved.
@@ -11,13 +10,9 @@
 
 @implementation TestVC
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)viewDidLoad 
+{
+  [super viewDidLoad];
 }
-
-- (void)dealloc {
-    [super dealloc];
-}
-
 
 @end

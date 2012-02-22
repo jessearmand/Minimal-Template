@@ -1,6 +1,5 @@
 //
 //  AppDelegate.m
-//  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
 //  Copyright ___ORGANIZATIONNAME___ ___YEAR___. All rights reserved.
@@ -10,37 +9,34 @@
 #import "TestVC.h"
 
 @implementation AppDelegate
-@synthesize window = _window;
-@synthesize viewController = _viewController;
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
-    
-    _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-	_window.backgroundColor = [UIColor whiteColor];
-	_viewController = [[TestVC alloc] init];
-	[_window addSubview:_viewController.view];
-    [_window makeKeyAndVisible];
+@synthesize window;
+@synthesize viewController;
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions 
+{        
+  self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+  self.window.backgroundColor = [UIColor whiteColor];
+  self.viewController = [[TestVC alloc] init];
+  self.window.rootViewController = self.viewController;
+  [self.window makeKeyAndVisible];
 	
-	return YES;
+  return YES;
 }
 
-- (void)applicationWillTerminate:(UIApplication *) application{
-
-}
-
-- (void)applicationDidEnterBackground:(UIApplication *) application{
+- (void)applicationWillTerminate:(UIApplication *)application
+{
 
 }
 
-- (void)applicationDidBecomeActive:(UIApplication *) application{
+- (void)applicationDidEnterBackground:(UIApplication *)application
+{
+
+}
+
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
 	
 }
-
-- (void)dealloc {
-	self.viewController = nil;
-	self.window = nil;
-    [super dealloc];
-}
-
 
 @end

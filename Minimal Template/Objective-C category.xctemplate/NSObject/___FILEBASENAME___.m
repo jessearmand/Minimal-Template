@@ -1,13 +1,12 @@
 //
 //  ___FILENAME___
-//  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
 //  Copyright ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-___IMPORTHEADER_categoryClass___
+#import "___FILEBASENAME___.h"
 
-@interface ___VARIABLE_categoryClass___ (___FILEBASENAMEASIDENTIFIER___)
+@implementation ___VARIABLE_categoryClass___ (___FILEBASENAMEASIDENTIFIER___)
 
 @end
